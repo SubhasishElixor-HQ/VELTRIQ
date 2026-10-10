@@ -1,0 +1,1 @@
+"""VehicleGPT local diagnostic assistant."""
