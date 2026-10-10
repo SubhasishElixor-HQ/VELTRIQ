@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.uv-cache/
+.test-tmp/
+node_modules/
+dist/
+.env
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/generated/*.jsonl
+!data/generated/.gitkeep
