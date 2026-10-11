@@ -1,0 +1,57 @@
+{
+  "dataset": "VehicleGPT synthetic demo v1",
+  "scenarios": [
+    {
+      "scenario_id": "normal_city",
+      "trip_id": "SIM-001",
+      "expected_event_ids": [],
+      "expected_signal": "energy_consumption",
+      "expected_energy_kwh_per_100km": 16.2
+    },
+    {
+      "scenario_id": "range_drop",
+      "trip_id": "SIM-002",
+      "expected_event_ids": [
+        "SIM-002-E-RANGE-01"
+      ],
+      "expected_signal": "energy_consumption",
+      "expected_energy_kwh_per_100km": 25.1
+    },
+    {
+      "scenario_id": "battery_warning",
+      "trip_id": "SIM-003",
+      "expected_event_ids": [
+        "SIM-003-E-BATT-01"
+      ],
+      "expected_signal": "energy_consumption",
+      "expected_energy_kwh_per_100km": 19.4
+    },
+    {
+      "scenario_id": "adas_disengagement",
+      "trip_id": "SIM-004",
+      "expected_event_ids": [
+        "SIM-004-E-ADAS-01"
+      ],
+      "expected_signal": "energy_consumption",
+      "expected_energy_kwh_per_100km": 18.6
+    },
+    {
+      "scenario_id": "battery_warning_recurrence",
+      "trip_id": "SIM-005",
+      "expected_event_ids": [
+        "SIM-005-E-BATT-01"
+      ],
+      "expected_signal": "energy_consumption",
+      "expected_energy_kwh_per_100km": 20.1
+    },
+    {
+      "scenario_id": "missing_sensor",
+      "trip_id": "SIM-006",
+      "expected_event_ids": [
+        "SIM-006-E-SENSOR-01"
+      ],
+      "expected_signal": "energy_consumption",
+      "expected_energy_kwh_per_100km": 20.2
+    }
+  ]
+}
